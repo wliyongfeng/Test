@@ -8,8 +8,17 @@ public class User {
     private String name;
     private List<String> messages;
 
-    // getter and setter methods
+    public User() {
+        // TODO Auto-generated constructor stub
+    }
 
+    public User(int age, String name, List<String> messages) {
+        this.age = age;
+        this.name = name;
+        this.messages = messages;
+    }
+
+ // getter and setter methods
     public int getAge() {
         return age;
     }

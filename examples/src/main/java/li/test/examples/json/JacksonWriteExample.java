@@ -19,6 +19,8 @@ public class JacksonWriteExample {
         msgs.add("hello");
         msgs.add("world");
         user.setMessages(msgs);
+        
+        user = new User(28, "liyongfeng", msgs);
         ObjectMapper mapper = new ObjectMapper();
 
         try {
