@@ -109,7 +109,7 @@ public class JsonProcessor {
         }
 
         System.out.println(expenses.getExpenses());
-        System.out.println(expenses.getExpenses().get(0).getDate()
+        System.out.println(expenses.getExpenses().get(0).getCalendar()
                 .get(Calendar.MONTH));
         
     }

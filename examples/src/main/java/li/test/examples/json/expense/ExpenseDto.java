@@ -6,17 +6,17 @@ public class ExpenseDto {
     public String author;
     public double amount;
     public String reason;
-    public Calendar date;
+    public Calendar calendar;
 
     public ExpenseDto() {
         // TODO Auto-generated constructor stub
     }
 
-    public ExpenseDto(String author, double amount, String reason, Calendar date) {
+    public ExpenseDto(String author, double amount, String reason, Calendar calendar) {
         this.author = author;
         this.amount = amount;
         this.reason = reason;
-        this.date = date;
+        this.calendar = calendar;
     }
 
     public String getAuthor() {
@@ -43,18 +43,18 @@ public class ExpenseDto {
         this.reason = reason;
     }
 
-    public Calendar getDate() {
-        return date;
+    public Calendar getCalendar() {
+        return calendar;
     }
 
-    public void setDate(Calendar date) {
-        this.date = date;
+    public void setCalendar(Calendar calendar) {
+        this.calendar = calendar;
     }
 
     @Override
     public String toString() {
         return "ExpenseDto [author=" + author + ", amount=" + amount
-                + ", reason=" + reason + ", date=" + date + "]";
+                + ", reason=" + reason + ", calendar=" + calendar + "]";
     }
 
 }
